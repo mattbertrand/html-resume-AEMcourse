@@ -1,87 +1,90 @@
 <html>
 	<head>
-		<title>Matthieu Bertrand Resume</title>
-		<style>
-			main {
-				background-color: rgb(103, 173, 243);
-				padding: 4px;
-				color: #202020;
-			}
-
-			h1,
-			h2 {
-				color: darkblue;
-			}
-		</style>
+		<title>Matthieu Bertrand's Resume</title>
+		<link rel="stylesheet" href="site.css" />
 	</head>
 
 	<body>
-		<header>
-			<h1>Matthieu Bertrand</h1>
-			<img
-				src="/assets/img/NST picture matt.png"
-				alt="Matthieu Bertrand profile pic"
-			/>
+		<div class="container">
+			<header>
+				<img
+					id="headshot"
+					src="/assets/img/NST picture matt.png"
+					alt="Matthieu Bertrand profile pic"
+				/>
+				<h1 id="siteName">Matthieu Bertrand</h1>
 
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="privacy.html">Privacy</a></li>
-			</ul>
-		</header>
+				<ul id="menu">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</header>
 
-		<main>
-			<h2>Experience</h2>
-			<div>
-				<p>Accenture &bullet; Consulting firm &bullet; 2022 - present</p>
-				<p>Application Developer Associate</p>
-			</div>
-			<div>
-				<p>
-					Barrel House Tavern &bullet; Californian Restaurant &bullet; 2018 -
-					2020
-				</p>
-				<p>Assistant Restaurant Manager</p>
-			</div>
-		</main>
+			<main>
+				<h2>Experience</h2>
+				<div class="experience">
+					<p class="title">
+						Accenture &bullet; Consulting firm &bullet; 2022 - present
+					</p>
+					<p>Application Developer Associate</p>
+					<p>San Francisco, CA, USA</p>
+				</div>
+				<div class="experience">
+					<p class="title">
+						Barrel House Tavern &bullet; Californian Restaurant &bullet; 2018 -
+						2020
+					</p>
+					<p>Assistant Restaurant Manager</p>
+					<p>Sausalito, CA, USA</p>
+				</div>
+				<div class="experience">
+					<p class="title">
+						Trader Vic's Worldwide &bullet; Tiki Restaurant &bullet; 2015 - 2017
+					</p>
+					<p>Assistant Restaurant Manager</p>
+					<p>Emeryville, CA, USA &bullet; Doha, Qatar</p>
+				</div>
+			</main>
 
-		<aside>
-			<h2>Contact Me</h2>
-			<form>
-				<div>
-					<label for="fullName">Full Name</label>
-				</div>
-				<div>
-					<input id="fullName" />
-				</div>
-				<div>
-					<label for="email">Email</label>
-				</div>
-				<div>
-					<input id="email" />
-				</div>
-				<div>
-					<label for="subject">Subject</label>
-				</div>
-				<div>
-					<select id="subject">
-						<option>Job Offer</option>
-						<option>Personal Message</option>
-						<option>Complaint</option>
-					</select>
-				</div>
-				<div>
-					<label for="msg">Message</label>
-				</div>
-				<div>
-					<textarea id="msg" rows="4"></textarea>
-				</div>
-				<div>
-					<input type="submit" value="Send Mail" />
-				</div>
-			</form>
-		</aside>
+			<aside>
+				<h2>Contact Me</h2>
+				<form>
+					<div>
+						<label for="fullName">Full Name</label>
+					</div>
+					<div>
+						<input id="fullName" />
+					</div>
+					<div>
+						<label for="email">Email</label>
+					</div>
+					<div>
+						<input id="email" />
+					</div>
+					<div>
+						<label for="subject">Subject</label>
+					</div>
+					<div>
+						<select id="subject">
+							<option>Job Offer</option>
+							<option>Personal Message</option>
+							<option>Complaint</option>
+						</select>
+					</div>
+					<div>
+						<label for="msg">Message</label>
+					</div>
+					<div>
+						<textarea id="msg" rows="4"></textarea>
+					</div>
+					<div>
+						<input type="submit" value="Send Mail" />
+					</div>
+				</form>
+			</aside>
 
-		<footer>&copy; 2022 Copyright - Matthieu Bertrand &bullet;</footer>
+			<footer>&copy; 2022 Copyright &dash; Matthieu Bertrand</footer>
+		</div>
 	</body>
 </html>
