@@ -102,3 +102,8 @@ header #menu {
 	font-size: 14px;
 	font-style: italic;
 }
+
+#button {
+	background-color: rgb(103, 173, 243);
+	border-radius: 10%;
+}

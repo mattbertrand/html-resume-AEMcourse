@@ -1,7 +1,7 @@
 import Contact from './Contact.js';
 
 const formInfo = document.getElementById('formInfo');
-let hasJob = false;
+let hasJob = true;
 
 if (hasJob) {
 	showMessage('Thanks for visiting, I am currently employed.');
@@ -16,6 +16,8 @@ if (dayOfWeek === 0 || dayOfWeek === 6) {
 	showMessage(
 		'Since it is the weekend, please be patient with my returning your email'
 	);
+} else {
+	showMessage('I am available from 8am PST to 6pm PST');
 }
 
 function showMessage(message) {

@@ -1,27 +1,79 @@
 <html>
 	<head>
-		<title>Matthieu Bertrand Resume</title>
+		<title>Matthieu Bertrand's Resume</title>
+		<link rel="stylesheet" href="site.css" />
 	</head>
 
 	<body>
-		<header>
-			<h1>Matthieu Bertrand</h1>
-			<img
-				src="/assets/img/NST picture matt.png"
-				alt="Matthieu Bertrand profile pic"
-			/>
+		<div class="container">
+			<header>
+				<img
+					id="headshot"
+					src="/assets/img/NST picture matt.png"
+					alt="Matthieu Bertrand profile pic"
+				/>
+				<h1 id="siteName">Matthieu Bertrand</h1>
 
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="privacy.html">Privacy</a></li>
-			</ul>
-		</header>
+				<ul id="menu">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</header>
 
-		<main>
-			<h1>About</h1>
-		</main>
+			<main>
+				<h2>About Me</h2>
+				<p>
+					Dynamic, energetic and highly motivated full stack software developer.
+				</p>
+			</main>
 
-		<footer>&copy; 2022 Copyright - Matthieu Bertrand &bullet;</footer>
+			<aside>
+				<h2>Contact Me</h2>
+				<form id="contactForm">
+					<div id="formInfo"></div>
+					<br />
+					<div>
+						<label for="fullName">Full Name</label>
+					</div>
+					<div>
+						<input id="fullName" />
+					</div>
+					<br />
+					<div>
+						<label for="email">Email</label>
+					</div>
+					<div>
+						<input id="email" />
+					</div>
+					<br />
+					<div>
+						<label for="subject">Subject</label>
+					</div>
+					<div>
+						<select id="subject">
+							<option>Job Offer</option>
+							<option>Personal Message</option>
+							<option>Complaint</option>
+						</select>
+					</div>
+					<br />
+					<div>
+						<label for="body">Message</label>
+					</div>
+					<div>
+						<textarea id="body" rows="4"></textarea>
+					</div>
+					<br />
+					<div>
+						<input id="button" type="submit" value="Send Mail" />
+					</div>
+				</form>
+			</aside>
+
+			<footer>&copy; 2022 Copyright &dash; Matthieu Bertrand</footer>
+		</div>
+
+		<script src="dist/main.js"></script>
 	</body>
 </html>
